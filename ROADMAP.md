@@ -172,6 +172,9 @@ Ranked; detail and the full milestone table in [docs/roadmap.md](docs/roadmap.md
 
 ## Progress log
 
+- **2026-10-15 (M3, #1580 integration):** Synchronized the native Wayland pinch candidate with upstream `afa8e184`, retaining the already-merged wheel policy and newer document-opening logic. The remaining candidate adds pinch delivery and its scale/lifecycle regressions. Live hardware checks were not repeated; estimates unchanged.
+  Validation: 90 desktop tests passed (one existing ignored test), including the four pinch and four wheel policy tests; the viewer pointer-anchoring regression passed separately. Strict desktop Clippy, formatting, layering, assets and the 31-crate WASM gate passed.
+
 - **2026-10-19 (M14, #3373):** The main menu and its long submenus scroll in short windows, keeping their commands reachable. Estimates unchanged.
 
 - **2026-10-19 (M3, #3387):** Save-prompt shortcuts yield to later consent and utility dialogs; a synthetic UI regression checks that an edited document stays open. Estimates unchanged.

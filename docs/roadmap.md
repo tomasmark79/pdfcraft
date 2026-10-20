@@ -1,5 +1,13 @@
 # PdfCraft roadmap: milestones and what's next
 
+> **Last reviewed:** 2026-10-15 · **Last updated:** 2026-10-15 · **Change:** minor (M3 #1580 candidate synchronized with upstream `afa8e184`; existing wheel and document-opening fixes retained; estimates unchanged)
+
+**M3 candidate #1580:** Native Wayland pinch delivery remains an additional patch on
+top of the upstream wheel policy. Its production scale/lifecycle tests are in
+`apps/pdfcraft/tests/winit_wayland_pinch.rs`; existing PDF pointer anchoring stays
+unchanged. Hardware delivery and seat/capability teardown were not revalidated
+during this upstream synchronization.
+
 > **Last reviewed:** 2026-10-18 · **Last updated:** 2026-10-18 · **Change:** minor (M5, PR #1971: bounded nested FDF export excludes source page/page-tree dictionaries; refreshed against upstream 4db6ac4a; estimates unchanged)
 > **Last reviewed:** 2026-10-15 · **Last updated:** 2026-10-15 · **Change:** minor (M14/#2383 GPU-limit candidate; estimates unchanged) · **Target:** Adobe Acrobat Pro (Acrobat DC, continuous track 26.002.21931, macOS)
 > **Last reviewed:** 2026-10-15 · **Last updated:** 2026-10-15 · **Change:** minor (M7: the Edit text caret is as tall as the row it is on; estimates unchanged) · **Target:** Adobe Acrobat Pro (Acrobat DC, continuous track 26.002.21931, macOS)
