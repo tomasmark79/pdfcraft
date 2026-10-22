@@ -189,6 +189,9 @@ Ranked; detail and the full milestone table in [docs/roadmap.md](docs/roadmap.md
 | 8 | 1.0 polish: performance, right-to-left, missing languages, keyboard-only (M14) | 55–95 |
 
 ## Progress log
+
+- **2026-10-15 (M3, #1580 integration):** Synchronized the native Wayland pinch candidate with upstream `afa8e184`, retaining the already-merged wheel policy and newer document-opening logic. The remaining candidate adds pinch delivery and its scale/lifecycle regressions. Live hardware checks were not repeated; estimates unchanged.
+  Validation: 90 desktop tests passed (one existing ignored test), including the four pinch and four wheel policy tests; the viewer pointer-anchoring regression passed separately. Strict desktop Clippy, formatting, layering, assets and the 31-crate WASM gate passed.
 - **2026-10-13 (M7, free image rotation):** A selected page image has a rotate knob (Shift: 15 degree steps) and `image_edit` a `rotate_by` action; the angle is written as one undoable `cm`. Snapping to page edges while moving is in #1740; resize snapping is not done. Estimates unchanged.
 
 - **2026-10-20 (M4, initial view):** Window and interface options read indirect boolean ViewerPreferences values. Synthetic regressions cover true/false, direct/indirect preference dictionaries and save/reopen; malformed entries retain false defaults. Estimates unchanged.
